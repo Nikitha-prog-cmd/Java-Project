@@ -1,17 +1,17 @@
 package xyz;
-interface PrintTable{
-	void print();
-}
-class message implements PrintTable{
-	public void print() {
-		System.out.println("Hello From Interface");
+	interface printable {
+		void print();
 	}
-}
-
-public interface InterfaceExample {
-	public static void main(String[] args) {
-		message msg=new message();
-		msg.print();
+	class Message implements printable{
+		public void print() {
+			System.out.println("HELLO From INTERFACE");
+		}
 	}
+	public class InterfaceExample {
+		public static void main(String[]args) {
+			Message msg = new Message();
+			msg.print();
+		}
 
-}
+
+	}
